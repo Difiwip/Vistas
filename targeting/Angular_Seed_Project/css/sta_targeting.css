@@ -1,0 +1,188 @@
+/******************Container********************/
+
+.sta-targeting{
+    background: #f3f3f3;
+    webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border: 1px solid grey;
+}
+
+.sta-targeting-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+/******************Top Menu*********************/
+
+.sta-top-menu{
+    width: 100%;
+}
+
+.sta-targeting-title {
+    border-bottom: 1px solid grey;
+    background: #1ab394;
+    color: white;
+}
+
+
+/******************Vertical Menu*********************/
+
+.sta-vertical-menu {
+    flex-direction: column;
+    width: 15%;
+    border-right: 1px solid;
+    background: #607D8B;
+    color: white;
+    border: none;
+}
+
+
+.sta-targeting-circle {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.sta-circle-half{
+    width: 50%;
+    height: 100%;
+}
+
+.sta-targeting-item{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sta-targeting-item:hover{
+    background: rgba(255, 255, 255, 0.41);
+}
+
+/******************Helpers********************/
+
+.flex {
+    display: flex;
+}
+
+.flex-vertical-center{
+    align-items: center;
+}
+
+.flex-spaces-between{
+    justify-content: space-between;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/******************Search********************/
+
+.sta-search-wrapper {
+    width: 98%;
+    padding: 10px;
+}
+
+.sta-targeting-search-results {
+    min-height: 260px;
+    padding: 10px;
+    height: 200px;
+    overflow: auto;
+}
+
+.sta-targeting-search-results .item-found:hover {
+    background: white;
+}
+
+.close-label{
+    float: right;
+    margin-right: 10px;
+}
+
+.item-found {
+    float: left;
+    border-radius: 3px;
+    width: 98%;
+    border: 1px solid #c1c1c1;
+}
+
+.item-found p{
+    padding: 3px;
+    margin: 3px;
+}
+
+/******************Selected elements********************/
+
+
+.sta-targeting-elements{
+    min-height: 180px;
+    border-top: 1px solid grey;
+    padding: 5px;
+}
+
+.sta-targeting-item-title p{
+    margin: 10px;
+}
+
+
+/******************Colors*********************/
+
+.red {
+    background: #F44336;
+}
+
+.green {
+    background: #03ab03;
+}
+
+.grey{
+    background: #b2b2b2;
+}
+
+/******************Margins*********************/
+
+.margin-5{
+    margin: 5px;
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+/******************Input*********************/
+
+.underline-input {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 88%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  background: transparent;
+}
+
+.underline-input:focus {
+  outline: none;
+}
+
+.style-4 input[type="text"] {
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 1s;
+}
+.style-4 input[type="text"]:focus,
+.style-4 input[type="text"].focus {
+  border-bottom: solid 2px #1ab394;
+}
