@@ -2,10 +2,9 @@
 
 .sta-targeting{
     background: #f3f3f3;
-    webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
-    border: 1px solid grey;
+    webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .sta-targeting-wrapper{
@@ -36,6 +35,7 @@
     background: #607D8B;
     color: white;
     border: none;
+    transition: 0.4s ease all;
 }
 
 
@@ -45,6 +45,7 @@
     width: 15px;
     border-radius: 15px;
     overflow: auto;
+    float: right;
 }
 
 .sta-circle-half{
@@ -73,6 +74,10 @@
     align-items: center;
 }
 
+.flex-horizontal-center{
+    justify-content: center;
+}
+
 .flex-spaces-between{
     justify-content: space-between;
 }
@@ -85,6 +90,43 @@
     cursor: pointer;
 }
 
+.width-50{
+    width: 50%;
+}
+
+.width-45{
+    width: 30%;
+}
+
+.width-5{
+    width: 20%;
+}
+
+.heigth-100{
+    height: 100%;
+}
+
+.expanded{
+    width: 15%;
+}
+
+.shrink{
+    width: 0%;
+}
+
+.shrink-button{
+    width: 20%;
+    text-align: center;
+}
+
+.shrink div{
+    display: none;
+}
+
+.selected{
+    background: #d0d0d0 !important;
+}
+
 /******************Search********************/
 
 .sta-search-wrapper {
@@ -93,9 +135,9 @@
 }
 
 .sta-targeting-search-results {
-    min-height: 260px;
-    padding: 10px;
-    height: 200px;
+    min-height: 400px;
+    padding: 3px;
+    height: 400px;
     overflow: auto;
 }
 
@@ -110,10 +152,11 @@
 
 .item-found {
     float: left;
-    border-radius: 3px;
-    width: 98%;
-    border: 1px solid #c1c1c1;
-    background: white;
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+    background: #e9e9e9;
 }
 
 .item-found p{
@@ -126,8 +169,10 @@
 
 .sta-targeting-elements{
     min-height: 180px;
-    border-top: 1px solid grey;
     padding: 5px;
+    height: 300px;
+    overflow: auto;
+    background: rgb(26, 179, 148);
 }
 
 .sta-targeting-item-title p{
@@ -149,6 +194,9 @@
     background: #b2b2b2;
 }
 
+.white{
+    background: white;
+}
 /******************Margins*********************/
 
 .margin-5{
@@ -183,6 +231,7 @@
   border-bottom: solid 2px #c9c9c9;
   transition: border 1s;
 }
+
 .style-4 input[type="text"]:focus,
 .style-4 input[type="text"].focus {
   border-bottom: solid 2px #1ab394;
